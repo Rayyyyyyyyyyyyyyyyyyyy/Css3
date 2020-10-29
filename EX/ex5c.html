@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        div:hover img {
+            opacity: .5;
+        }
+
+        img {
+            opacity: 1;
+            /* 透明度 */
+            transition: .5s;
+            /* 延遲 */
+            width: 100%;
+        }
+
+        div:hover h1 {
+            opacity: 1;
+            transform: translateY(-25px);
+
+        }
+
+        h1 {
+
+            opacity: .3;
+            transition: .5s;
+            position: absolute;
+            top: 500px;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+            color: #fff;
+            text-shadow: 0 0 4px #000;
+            background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(165, 9, 9, 0.1)70%);
+            margin: 0;
+            transform: translateY(13px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>U.S.A</h1>
+        <img src="imgs/map.png" alt="">
+    </div>
+
+</body>
+
+</html>

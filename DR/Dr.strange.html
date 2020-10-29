@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            text-align: center;
+            width: 240px;
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: 0 4px 5px black;
+            background-color: #E0E0E0;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .banner {
+            background: url(imgs/light.jpg);
+            height: 120px;
+            background-size: cover;
+            overflow: hidden;
+
+        }
+
+
+        .card figure {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            /* margin:-60px auto 0; */
+            /* margin 可以是-的就會往外 */
+            /* 這是第一種寫法 */
+            margin: 0;
+            position: absolute;
+            /* position: absolute;這個是絕對定位,不會跟著卷軸走 */
+            /* position:fixed 會跟著卷軸跑 */
+            /* position:static 預設 */
+
+            /* left: 60px; */
+            left: 50%;
+            margin-left:-60px ;
+            top: 60px;
+
+
+
+        }
+
+
+        .card figure img {
+            width: 100%;
+        }
+
+        .card h3 {
+
+            border-bottom: 1px solid #9D9D9D;
+            padding: 0px 0 10px 0;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #ADADAD;
+            text-shadow: 1px 1px #7B7B7B;
+        }
+
+        .content {
+            /* padding: 20px; */
+            padding-top: 35px;
+            border: 20px solid transparent;
+            border-image: url(/imgs/border-image2.png)20 round;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class=banner> </div>
+
+        <figure>
+            <img src="imgs/dr_strange.jpg" alt="">
+        </figure>
+        <div class="content">
+            <h3>Dr.Strange</h3>
+
+            <p>Hello,I'm Steve Strange</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

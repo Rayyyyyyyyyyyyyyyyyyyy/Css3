@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            max-width: 800px;
+            height: 500px;
+            background: #ddd;
+            margin: 0 auto;
+            /* display: inline-flex; */
+            /* 把自己本身變成flex */
+            display: flex;
+            /* 把裡面的東西變成flex元素 */
+            flex-direction: row;
+            /* justify-content: flex-end;  */
+            /* 由右而左 從後面往前  要看flex-direction:的排列方式*/
+            /* justify-content: center; */
+            /* 水平對齊 */
+            /* flex-direction: row-reverse; */
+            /* 由右而左 */
+            /* flex-direction:column-reverse; */
+            /* 由下而上 */
+            /* justify-content: space-around; */
+            /* 平均分配物件間的空格 */
+            /* justify-content:space-between; */
+            /* 兩側貼底後 中間平均分配 */
+            /* justify-content:space-evenly; */
+            /* 平均分配物件與物件還有邊界的空格 */
+            /* justify-content: center; */
+            /* 水平對齊 */
+            /* 只能用center */
+            /* align-items: center; */
+            /* 垂直對齊 */
+            align-items: stretch;
+            /* 預設就是stretch */
+            /* 延展至容器的高度 */
+            /* 不用height 以最高的容器高度為準  */
+            flex-wrap: wrap;
+            /* 超過最大寬度時換行 */
+            align-content: space-between;
+            /* 改變多行的對齊方式 */
+            /* stretch 預設 */
+            /* center 置中 */
+            /* flex-start 從上開始對齊 */
+            /* flex-end 從底部開始對齊 */
+            /* space-between 平均分配在開始跟結束 */
+            /* space-around 上下留點空間的between */
+            /* flex-flow: row wrap; */
+            /* 知道就好的合體 具體怎麼用要google */
+        }
+        
+        .box {
+            width: 150px;
+            /* height: 100px; */
+            background: pink;
+            margin: 10px;
+            font-size: 20px;
+            /* flex-grow: 1; */
+            /* 預設是0 大於0就會分配剩餘空間 */
+            /* 要寫在各別元素上 對各別元素做調整 */
+            /* flex-shrink: 1; */
+            /* 預設是1 會壓縮內容的寬度 */
+            /* 防止內容物過多超過容器寬度導致爆版 */
+            /* 改成0就會恢復原始設定寬度 */
+            /* flex-basis: 100px; */
+            /* 會取代原本設定的width */
+            flex: 0 0 100px;
+            /* 合併寫法 */
+            /* grow shrink basis */
+        }
+        
+        .box1 {
+            flex-grow: 1;
+            /* 預設是0 大於0就會分配剩餘空間 */
+            /* 要寫在各別元素上 對各別元素做調整 */
+            /* flex-shrink: 3; */
+            /* 數字越大 壓縮得越厲害 */
+            order: 2;
+        }
+        
+        .box2 {
+            /* flex-grow: 2; */
+            /* 分配剩餘的空間 EX:500 */
+            /* 數字代表(分子) EX:2 */
+            /* 擁有flex-grow指令的元素數量(分母) EX:5 */
+            /* 所分到的就是500*5/2 */
+            /* flex-shrink: 1; */
+            order: -1;
+            align-self: center;
+            /* 對各別的元素做垂直方向對齊方式的調整 */
+        }
+        
+        .box3 {
+            order: 1;
+            /* 預設是0 */
+            /* 大於0 會跑到其他沒有order的最後面 */
+            /* 有多個order值時會比大小 */
+            /* 數字越大 越後面 */
+            /* 負值會跑到沒有order的前面 */
+            /* 同理 負值越小 越前面 */
+        }
+        
+        .box4 {
+            order: -5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <!-- <div class="box">5</div> -->
+        <!-- <div class="box">6</div> -->
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

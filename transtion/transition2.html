@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-wrap:hover .box {
+            background: darkslateblue;
+            width: 800px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background: darkred;
+            transition: 2s;
+            margin: 10px;
+        }
+
+        .box:hover {}
+
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+        .cubic1{
+            transition-timing-function:cubic-bezier(.16,1.14,1,-0.46);
+        }
+        .cubic2{
+            transition-timing-function:cubic-bezier(.85,-0.7,.08,2.16);
+        }
+    </style>
+</head>
+
+<body>
+    <div class='box-wrap'>
+        <div class="box"></div>
+        <div class="box linear"></div>
+        <div class="box ease-in"></div>
+        <div class="box ease-out"></div>
+        <div class="box cubic1"></div>
+        <div class="box cubic2"></div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 要習慣先用這個調整 */
+        }
+
+        body {
+            background: rgb(211, 208, 208);
+        }
+
+        a,
+        a:link {
+            color: royalblue;
+            text-decoration: none;
+            margin: 0 10px 0 10px;
+        }
+
+        /* a:visited {}
+
+        a:hover {}
+
+        a:active {
+            color: rgb(231, 181, 120);
+        } */
+
+        .wra {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .cover-fit {
+            width: 100%;
+            object-fit: contain;
+
+        }
+
+        .her {
+            background: #fff;
+            padding: 10px 0;
+        }
+
+        .hea {
+            background: #ffffff;
+        }
+
+        .hea .d-flex {
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 48px;
+        }
+
+        .main-nav {
+            background: #2b66be;
+        }
+
+        .main-nav li {
+            position: relative;
+       
+        }
+
+        .submenu {
+            position: absolute;
+            background: #2b66be;
+            /* display: none; */
+            transition: .5s;
+            opacity: 0;
+            /* height: 0; */
+            overflow: hidden;
+            max-height: 0;
+        
+         
+        }
+
+        .main-nav li:hover .submenu {
+            /* display: block; */
+            opacity: 1;
+            /* height: 110px; */
+            max-height: 150px;
+
+        }
+
+        .main-nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-nav li a {
+            color: #fff;
+            padding: 10px 20px;
+            display: block;
+            margin: 0;
+        }
+
+        .main-nav li a:hover {
+            background: #7092db;
+        }
+
+        @media screen and (max-width: 768px) {
+            .maun-nav li {
+                /* flex-grow: 1; */
+                /* flex-basis: 0px; */
+                flex: 1 0 0;
+                text-align: center;
+            }
+
+            .main-nav li a {
+                padding: 10px 5px;
+            }
+        }
+
+        main.d-flex {
+            margin-top: 20px;
+        }
+
+        .left-aside figure {
+            background: #fff;
+            width: 160px;
+            height: 160px;
+            margin: 0 0 10px 0;
+            border-radius: 40px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .side-nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .side-nav a {
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            display: block;
+            border-left: 4px solid transparent;
+        }
+
+        .side-nav li a:hover {
+            background: rgb(206, 215, 243);
+            border-left: 4px solid rgb(164, 181, 235)
+        }
+
+        .side-nav .active a {
+            background: rgb(206, 215, 243);
+            border-left: 4px solid rgb(164, 181, 235)
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .side-nav {
+                /* max-width: 100%; */
+                display: flex;
+                /* justify-content: space-between; */
+                /* flex-shrink: 1; */
+
+            }
+
+            .side-nav li {
+                flex: 1 0 0;
+                text-align: center;
+            }
+
+            .side-nav li a {
+                border-left: none;
+                border-bottom: 4px solid transparent;
+            }
+
+            .side-nav li a:hover,
+            .side-nav li.active a {
+                color: rgb(12, 66, 61);
+                border-left: none;
+                border-bottom: 4px solid #3b5998;
+            }
+
+            /* .side-nav .active a {
+                max-width: 100%;
+                border-left: 4px solid transparent;
+                border-bottom: 4px solid rgb(164, 181, 235);
+
+            }
+
+            .side-nav li a:hover {
+                border-left: 4px solid transparent;
+                border-bottom: 4px solid rgb(164, 181, 235);
+            } */
+        }
+
+        .box {
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+            border: 3px solid #ccc;
+            box-shadow: 2px 2px 0px black;
+            padding: 20px;
+        }
+
+        .banner {
+            height: 120px;
+            background: url(../imgs/light.jpg) center center;
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+
+        .box h1 {
+            margin: 0 0 10px;
+        }
+
+        .box p {
+            color: rgb(145, 137, 137);
+            line-height: 1.7;
+        }
+
+        article {
+            flex-grow: 1;
+            margin: 10px;
+            min-height: calc(100vh - 200px);
+        }
+
+        .right-aside {
+            width: 160px;
+            display: flex;
+            align-items: flex-end;
+            flex-shrink: 0;
+        }
+
+        .right-aside img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* main.d-flex {
+                flex-wrap: wrap;
+
+            }
+
+            article {
+                width: 100%;
+            } */
+            main.d-flex {
+                flex-direction: column;
+            }
+
+            .left-aside figure {
+                margin: 0 auto 10px;
+            }
+
+            .right-aside img {
+                display: none;
+            }
+
+            .banner {
+                height: 120px;
+                background: url(../imgs/slide1.jpeg) center center;
+                background-size: cover;
+                margin-bottom: 10px;
+            }
+
+        }
+
+        footer {
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class='hea'>
+        <div class='wra d-flex'>
+            <img class='logo' src="../imgs/facebook.png" alt="">
+            <div class='box1'>
+                <a href="">log in</a>|<a href="">sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class='main-nav'>
+        <ul class='wra d-flex'>
+            <li class='active'><a href="">home</a></li>
+            <li><a href="">produst</a>
+                <ul class="submenu">
+                    <li><a href="">men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">kid</a></li>
+                </ul>
+            </li>
+            <li><a href="">story</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">about</a></li>
+        </ul>
+    </nav>
+
+    <div class="wra">
+        <main class='d-flex'>
+            <aside class='left-aside'>
+                <figure>
+                    <img class='cover-fit' src="../imgs/logo.jpg" alt="">
+                </figure>
+                <ul class='side-nav'>
+                    <li class='active'><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">albums</a></li>
+                    <li><a href="">films</a></li>
+                </ul>
+            </aside>
+            <article>
+                <div class="box">
+                    <div class="banner"></div>
+                    <h1>所以 JavaScript 到底是什麼？</h1>
+                    <time>
+                        2020/10/15 09:30
+                    </time>
+                    <p>JavaScript 是一個成熟的動態程式語言，應用於 HTML 文件（document）上時，就可以為網頁提供動態的互動功能。JavaScript 是由 Mozilla
+                        project、Mozilla Foundation 和 Mozilla Corporation 的創辦人 Brendan Eich 所發明的。</p>
+                    <p>JavaScript 是一個成熟的動態程式語言，應用於 HTML 文件（document）上時，就可以為網頁提供動態的互動功能。JavaScript 是由 Mozilla
+                        project、Mozilla Foundation 和 Mozilla Corporation 的創辦人 Brendan Eich 所發明的。</p>
+                </div>
+            </article>
+            <aside class="right-aside">
+                <img src="../imgs/jk.png" alt="">
+            </aside>
+        </main>
+    </div>
+    <footer>
+        In this module
+    </footer>
+</body>
+
+</html>

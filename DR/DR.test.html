@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: wheat;
+        }
+
+        .box {
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            background: rgb(201, 156, 139);
+            border-radius: 20px;
+            position: relative;
+
+
+            /* border: 40px solid transparent;
+            border-image: url(/imgs/frame_border.png)80 stretch;
+            box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.6); */
+        }
+
+        /* .box:hover {
+            opacity: .5;
+            transition: .5s;
+        } */
+
+
+
+        .heand {
+            background: url(imgs/Fan.png) center;
+            max-width: 500px;
+            height: 200px;
+            margin: 0;
+            background-size: cover;
+            border-radius: 10px;
+            /* overflow: hidden; */
+
+
+        }
+
+        .fd {
+            border-radius: 50%;
+            overflow: hidden;
+            max-width: 250px;
+            height: 350px;
+            margin: 0 0 50px 0;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            margin-left: -125px;
+
+        }
+
+        .dr {
+            width: 100%;
+
+        }
+
+        .box2 {
+            padding-top: 250px;
+            /* text-align: center; */
+            border: 20px solid transparent;
+            border-image: url(imgs/border-image2.png)20 round;
+
+        }
+
+        .box2 h1 {
+            width: 300px;
+            margin: auto;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid black;
+        }
+
+        .box p {
+
+            width: 300px;
+            margin: auto;
+
+        }
+
+        .box3:hover {
+            width: 500px;
+            height: 400px;
+            
+            background: url(imgs/Forzinetti.jfif)center;
+            opacity: .5;
+            transform: scale(2);
+            /* transform: rotate(360deg); */
+            transition: .5s;
+
+        }
+
+        .box3:hover .fd {
+            opacity: 0;
+        }
+        .box3:hover h1{
+            opacity: 0;
+        }
+        .box3:hover p{
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="heand"></div>
+        <div class=box3>
+
+            <figure class='fd'>
+                <img class='dr' src="/imgs/Dr Strange by WesTalbott on DeviantArt.jfif" alt="">
+            </figure>
+
+            <div class='box2'>
+                <h1>STRANGE</h1>
+                <p>Doctor Strange is a 2016 American superhero film based on the Marvel Comics character of the same
+                    name.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

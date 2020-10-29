@@ -1,0 +1,247 @@
+    @media screen and (max-width:768px) {
+         :root {
+            --sevenwidth: 100%;
+        }
+        header {
+            width: var(--sevenwidth);
+            justify-content: space-between;
+        }
+        .main {
+            width: var(--sevenwidth)
+        }
+        .find {
+            flex-grow: 3;
+        }
+        .back {
+            width: var(--sevenwidth)
+        }
+        .fc img {
+            object-fit: cover;
+        }
+        .icon {
+            width: var(--sevenwidth)
+        }
+        .card {
+            width: var(--sevenwidth)
+        }
+        .gray {
+            width: var(--sevenwidth)
+        }
+        .bnum {
+            width: var(--sevenwidth)
+        }
+        .num {
+            width: var(--sevenwidth)
+        }
+        .col {
+            width: var(--sevenwidth)
+        }
+        .about {
+            width: 600px;
+            justify-content: space-between;
+        }
+        .aaa {
+            justify-content: space-between;
+        }
+        .about h3 {
+            font-size: 24px;
+            margin: 20px 30px 20px 10px;
+        }
+        .map {
+            width: var(--sevenwidth);
+            justify-content: space-between;
+        }
+        .map p {
+            flex-grow: 1;
+        }
+        .coon ul {
+            padding-left: 20px;
+        }
+        .dis {
+            font-size: 12px;
+        }
+        .pinkbox {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+         :root {
+            --iwidth: 280px;
+            --iheigh: 300px;
+        }
+        header {
+            width: var(--sevenwidth);
+            justify-content: space-between;
+        }
+        .logo {
+            margin: 20px auto;
+        }
+        .find {
+            display: none;
+        }
+        .find2 {
+            display: none;
+        }
+        .menu {
+            display: block;
+            width: 50px;
+            margin-right: 5px;
+        }
+        .back {
+            width: 100%;
+            height: 300px;
+            background: url(imgs/slide1.jpg) center center;
+            background-size: cover;
+            box-shadow: inset 0 0 500px rgb(0, 0, 0);
+        }
+        .fc {
+            width: 100px;
+            left: 50%;
+            margin-left: -50px;
+        }
+        .fc figcaption {
+            width: 150px;
+            font-size: 24px;
+        }
+        .cut h3 {
+            width: 200px;
+            left: 50%;
+            margin-left: -100px;
+            bottom: 35%;
+            font-size: 10px;
+        }
+        .box {
+            width: 200px;
+            height: 30px;
+            left: 50%;
+            margin-left: -100px;
+            top: 65%;
+            border-radius: 10px;
+        }
+        .box select {
+            margin: 0;
+        }
+        .gogo {
+            width: 200px;
+            transform: translateY(40px);
+            left: 50%;
+            margin-left: -100px;
+            text-align: center;
+        }
+        .gogo img {
+            width: 15px;
+        }
+        .icon {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        .icon figure {
+            margin-top: 0;
+        }
+        .icon figcaption {
+            text-align: center;
+        }
+        .hot {
+            display: none;
+        }
+        .r600 {
+            display: block;
+        }
+        .card {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .up {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .down {
+            width: 100%;
+        }
+        .byeall {
+            display: none;
+        }
+        .wantsee {
+            display: block;
+        }
+        .but600 {
+            transform: translate(0, 0);
+            display: inline-flex;
+            justify-content: flex-end;
+        }
+        .no2 {
+            display: block;
+        }
+        .card600 {
+            width: 100%;
+            columns: 2;
+        }
+        .but {
+            display: block;
+            transform: none;
+            width: 50%;
+            margin: 10px auto;
+        }
+        .gray {
+            margin-top: 20px;
+        }
+        .logos {
+            display: block;
+            left: 60%;
+        }
+        .bnum {
+            opacity: .7;
+        }
+        .col {
+            columns: auto;
+            top: 5%;
+        }
+        .c600 {
+            columns: 1;
+            column-rule: none;
+            margin: 10px 0 10px 0;
+        }
+        .num {
+            height: 450px;
+        }
+        .bnum {
+            height: 450px;
+        }
+        .about {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            left: 0;
+            bottom: 10%;
+        }
+        .about h3 {
+            width: 300px;
+            margin: 20px auto;
+            font-size: 36px;
+        }
+        .aaa {
+            justify-content: space-evenly;
+        }
+        .scut {
+            width: 30px;
+        }
+        .dcc {
+            width: calc(100% - 30px);
+        }
+        .map {
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .f600 {
+            width: 70%;
+            justify-content: space-between;
+        }
+        .ppppp {
+            width: 100%;
+        }
+    }

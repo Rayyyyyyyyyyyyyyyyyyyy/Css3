@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(109, 195, 216);
+            transition:background .4s,
+            width 2s 3s,height .5s 1s;
+            /* 預設是對所有效果都做延遲 */
+            /* transition: .5s .5s; */
+            /* 第二個.5S是等待0.5秒 延遲的意思 */
+        }
+        .box:hover{
+            background: rgb(57, 86, 165);
+            width: 500px;
+            height: 300px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+   
+</body>
+</html>

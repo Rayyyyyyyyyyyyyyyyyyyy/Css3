@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: salmon;
+            margin: 10px;
+            float: left;
+            transition: .5s;
+        }
+
+        .translateX:hover {
+            transform: translateX(20px);
+            background: springgreen;
+
+        }
+
+        .translateY {
+            transform: translatey(0);
+        }
+
+        .translateY:hover {
+            transform: translatey(-20px);
+            opacity: .5;
+            background-color: sienna;
+        }
+
+        .translate:hover {
+            transform: translate(5px, 100px);
+
+        }
+
+        .translate:hover {
+            background: linear-gradient(rgb(203, 203, 223) 40%, rgb(0, 19, 128));
+        }
+
+        .rotate:hover {
+            transform: rotate(360deg);
+            background: slateblue;
+        }
+        .rotate2{
+            transform-origin: right top;
+        }
+        .rotate2:hover{
+            transform:rotate(-60deg);
+        }
+
+        .scale:hover {
+            transform: scale(.3);
+            background: slategray;
+        }
+
+        .skewX:hover {
+            transform: skewX(-20deg);
+
+        }
+
+        .transform:hover {
+            transform: translate(90px, 200px) rotate(30deg);
+        }
+        .matrix:hover{
+            transform: matrix(5,0,0,1,10,10);
+        }
+
+
+
+
+        .box-wrap {
+            width: 200px;
+            height: 200px;
+            margin: 20px 0 0 10px;
+            float: left;
+            border: 2px solid #aaa;
+        }
+
+        .box-wrap .box {
+            margin: 0;
+        }
+
+        .scale2 {
+            transform: scale(1);
+        }
+
+        .box-wrap:hover .scale2 {
+            transform: scale(.3);
+            opacity: 1;
+            background: thistle;
+        }
+
+        .translate2 {
+            transform: translateY(0);
+        }
+
+        .box-wrap:hover .translate2 {
+            transform: translateY(100px);
+            background: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box translateX">X軸位移</div>
+    <div class="box translateY">Y軸位移</div>
+    <div class="box translate">X軸+Y軸的位移</div>
+    <div class="box rotate">旋轉</div>
+    <div class="box rotate2">旋轉2.0</div>
+    <div class="box scale">大小轉變</div>
+    <div class="box skewX">傾斜</div>
+    <div class='box transform'>綜合位移跟旋轉</div>
+    <div class="box matrix">有五樣東西喔</div>
+
+
+    <div class="box-wrap">
+        <div class="box scale2">用兩層DIV去做變化</div>
+    </div>
+    <div class="box-wrap">
+        <div class="box translate2"></div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #ccc;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .masonry {
+            column-count: 4;
+            -webkit-column-break-inside: avoid;
+            /* Chrome, Safari, Opera */
+            page-break-inside: avoid;
+            /* Firefox */
+            break-inside: avoid;
+            /* IE 10+ */
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .item {
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            background: #fff;
+
+        }
+
+        .item p {
+            padding: 0 20px 10px;
+        }
+
+        .masonry img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="masonry">
+            <div class="card item">
+                <img src="imgs/Fan.png" alt="">
+                <h3>我是傳奇</h3>
+            </div>
+            <biv class="card item">
+                <img src="imgs/dr_strange.jpg" alt="">
+                <h3>我是傳奇</h3>
+            </biv>
+            <biv class="card item">
+                <img src="imgs/Who.jfif" alt="">
+                <h3>我是傳奇</h3>
+            </biv>
+            <biv class="card item">
+                <img src="imgs/Forzinetti.jfif" alt="">
+                <h3>我是傳奇</h3>
+            </biv>
+            <biv class="card item"></biv>
+            <biv class="card item"></biv>
+            <biv class="card item"></biv>
+            <biv class="card item"></biv>
+            <biv class="card item"></biv>
+        </div>
+    </div>
+</body>
+
+</html>

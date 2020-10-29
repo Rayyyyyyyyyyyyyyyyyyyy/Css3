@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            max-width: 960px;
+            height: 600px;
+            margin: 0 auto;
+            display: grid;
+            background: rgb(224, 159, 172);
+            /* grid-template-columns: 1fr 1fr 300px 2fr; */
+            /* 橫向的寬度 */
+            /* fr為grid的單位 平均分配 */
+            /* grid-template-rows: 100px auto 1fr 200px; */
+            /* 直向的高度 */
+            /* grid-column-gap: 10px; */
+            /* 橫向的間距 */
+            /* grid-row-gap: 10px; */
+            /* 直向的間距 */
+            /* grid-gap: 5px 20px; */
+            /* 綜合的 先直後橫 */
+            grid-template-columns: repeat(3,auto) 100px;
+            /* 懶人寫法 數字代表幾等分 */
+
+            /* justify-content:space-between; */
+            /* 水平對齊 */
+            align-content:stretch;
+            /* 垂直方向的對齊 */
+        }
+        .grid-item{
+            padding: 10px;
+            border: 1px solid rgb(47, 187, 243);
+            background: rgb(179, 224, 241);
+        }
+        .grid-item11{
+            align-self:center;
+            justify-self: center;
+        }
+    </style>
+ 
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item grid-item11">11</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .shadow1 {
+            text-shadow: 1px 1px 4px #000;
+        }
+
+        .shadow2 {
+            color: #fff;
+            background-color: rgb(95, 9, 95);
+            width: 200px;
+            padding: 10px;
+            transition: .5s;
+
+        }
+
+        /* 多層陰影 */
+        .shadow2:hover {
+            color: white;
+            text-shadow: 0 0 4px #fff,
+                0 0 8px pink,
+                0 0 12px rgb(196, 170, 170),
+                0 0 16px rgb(207, 51, 51);
+        }
+
+        .shadow3 {
+            color: white;
+            background-color: turquoise;
+            text-shadow: 0 1px rgb(200, 200, 200),
+                0 2px rgb(160, 160, 160),
+                0 3px rgb(120, 120, 120),
+                0 4px rgb(80, 80, 80),
+                0 5px rgb(40, 40, 40);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class=shadow1>Hello,CSS3</h1>
+    <h1 class=shadow2>Hello,CSS3</h1>
+    <h1 class=shadow3>Hello,CSS3</h1>
+
+</body>
+
+</html>

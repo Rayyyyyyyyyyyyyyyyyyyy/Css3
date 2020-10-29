@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primart-color:rgb(105, 105, 105);
+            --No2color:rgb(26, 207, 207);
+            --cellWidth:100px;
+        }
+        /* 利用變數統一樣式 */
+        h1{
+            color:var(--primart-color);
+            font-size: 2.5rem;
+        }
+        h2{
+            color:var(--primart-color);
+            font-size: 2rem;
+        }
+        h3{
+            color:var(--primart-color);
+        }
+        .btn{
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 4px;
+            background: var(--primart-color);
+            color:#ccc;
+            font-size: 2rem;
+        }
+        .box{
+            background: var(--No2color);
+            width:var(--cellWidth);
+            height: var(--cellWidth);
+            margin: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>This is H1</h1>
+    <h2>This is H2</h2>
+    <h3>This is H3</h3>
+    <a role="button" class="btn">aaa</a>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "header header header header"
+                "nav nav nav nav"
+                "main main main aside"
+                "footer footer footer footer"
+            ;
+        }
+
+        header {
+            /* background: rgb(0, 112, 177); */
+            grid-area: header;
+
+        }
+
+        header figure {
+            margin: 0 auto;
+            max-width: 960px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position:center center ;
+        }
+
+        nav {
+            /* background: rgb(170, 0, 162); */
+            grid-area: nav;
+
+
+        }
+
+        nav ul {
+            max-width: 400px;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        nav a {
+            text-decoration: none;
+            background: #ddd;
+            padding: 10px 20px;
+            box-shadow: 2px 2px 3px #fff;
+        }
+
+        main {
+            /* background: rgb(0, 190, 102); */
+            grid-area: main;
+
+        }
+
+        main figure {
+            width: 580px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        main figure img {
+            width: 100%;
+        }
+
+        main p {
+            width: 580px;
+        }
+
+        main aside {
+            /* background: rgb(150, 0, 0); */
+            grid-area: aside;
+            overflow: hidden;
+        }
+
+        aside iframe {
+            width: 360px;
+        }
+
+        footer {
+            background: rgb(206, 202, 0);
+            grid-area: footer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .wrapper {
+                grid-template-columns: repeat(1,1fr);
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "aside"
+                    "footer";
+            }
+
+            .main-nav li {
+                flex: 1 0 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <figure>
+                <img src="/imgs/key.jpg" alt="">
+            </figure>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">home</a>
+                </li>
+                <li>
+                    <a href="">wiki</a>
+                </li>
+                <li>
+                    <a href="">movies</a>
+                </li>
+                <li>
+                    <a href="">app</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <figure>
+                <img src="/imgs/g.jpg" alt="">
+             
+            </figure>
+            <p>台中高美濕地，被媒體評選為世界最美夕陽，享譽國際的超級景點。高美濕地交通怎麼去？停車場推薦停哪裡？
+                高美濕地潮汐表、木棧道開放時間為何？高美濕地附近景點、美食、一日遊如何規劃？全幫大家整理在這裡了。</p>
+
+            <p>高美濕地太熱門了，假日經常會管制，建議將車停在高美濕地遊客中心旁的停車場，再騎iBike去木棧道最方便。
+                台中車站有309公車直達高美濕地，或預約高美濕地一日遊更輕鬆。一生必看一次絕美夕陽，快找個好天氣衝吧！
+            </p>
+            <figure>
+                <img src="/imgs/gg.jpg" alt="">
+              
+            </figure>
+            <p>高美濕地位於台中清水區，無論走國道一號或三號，都是轉國道四號往清水方向，下交流道沿指標約15分鐘即達。
+                平日可開進「美堤街」，堤防旁不少停車場，一次50元還能免費沖腳。記得挑裡面一點的，才不會離木棧道太遠。
+            </p>
+        </main>
+        <aside>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10284.127690179206!2d120.55068762985405!3d24.312046199292016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469133c166c6143%3A0x8677d74a6115be29!2z6auY576O5r-V5Zyw!5e0!3m2!1szh-TW!2stw!4v1602830396144!5m2!1szh-TW!2stw"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </aside>
+        <footer>
+            <ul>
+                <li>
+                    24小時免付費旅遊諮詢熱線：0800-011765
+                </li>
+                <li>免付費安心旅遊、紓困專線：0800-211734</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+body {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ :root {
+    --allcolor: #fa9a9a;
+    --wwidth: 200px;
+    --iiwidth: 200px;
+    --iiheigh: 500px;
+    --ccwidth: 280px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+header {
+    margin: 10px 0 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 900px;
+}
+
+.position {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.anone {
+    text-decoration: none;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+header a {
+    color: rgb(168, 166, 166);
+    font-size: 20px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    display: none;
+}
+
+.find {
+    flex-grow: 2;
+}
+
+.u1 {
+    align-items: center;
+    padding: 0;
+}
+
+.u1 li {
+    padding: 10px 20px 10px 10px;
+}
+
+.u2 {
+    align-items: center;
+}
+
+.u2 li {
+    padding: 0 10px 0 10px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.u2 li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.back {
+    background: url(imgs/long-hair.jpg) no-repeat;
+    width: 900px;
+    height: 500px;
+    background-size: cover;
+    opacity: .5;
+    box-shadow: inset 0 0 50px #000;
+    margin: 0 auto;
+}
+
+.fc {
+    width: 200px;
+    left: 60%;
+    top: 5%;
+}
+
+.fc img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.fc figcaption {
+    width: 250px;
+    font-size: 48px;
+    color: white;
+}
+
+.cut h3 {
+    right: 6%;
+    bottom: 28%;
+    color: #cccccc;
+}
+
+.box {
+    width: 350px;
+    height: 30px;
+    right: 2%;
+    top: 70%;
+    padding: 2px;
+    border: 4px solid var(--allcolor);
+    justify-content: space-between;
+}
+
+.loca {
+    width: 20px;
+    object-fit: contain;
+    padding: 2px;
+}
+
+.box select {
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px 0 5px;
+    border: 2px solid transparent;
+    border-right: 2px solid var(--allcolor);
+    margin-left: -160px;
+}
+
+.gogo {
+    right: 0;
+    background: var(--allcolor);
+    padding: 2px;
+    margin-right: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.icon {
+    background: #000;
+    width: 900px;
+    margin: auto;
+}
+
+.icon img {
+    width: 100px;
+}
+
+.icon figcaption {
+    text-align: center;
+    color: white;
+}
+
+main h1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.r600 {
+    display: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+.up {
+    width: 430px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.down {
+    width: 430px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.fif {
+    width: 50%;
+    margin: 0 2px;
+}
+
+.fif a {
+    color: #000;
+    background: 2px scroll var(--allcolor);
+    padding: 3px 5px;
+    border-radius: 4px;
+    opacity: .6;
+    bottom: 10%;
+    right: -5%;
+    z-index: 2;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+}
+
+.no2 {
+    display: none;
+}
+
+.card2 {
+    max-width: 900px;
+    margin: 0;
+    align-items: flex-end;
+}
+
+.card2 figure {
+    width: 30%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: inset 0 0 80px 500px #000;
+}
+
+.card2 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+}
+
+.bye600 {
+    display: none;
+}
+
+.box4 {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.box4 img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.card2 figcaption {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: wheat;
+    text-shadow: 0 0 5px #000;
+    transform: translate(5px, -30px);
+}
+
+.but {
+    display: inline;
+    padding: 8px 5px 8px 5px;
+    transform: translate(-20px, 30px);
+    background: var(--allcolor);
+    color: white;
+    border: none;
+}
+
+.box600 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.fine img {
+    width: 100%;
+    object-fit: contain;
+    opacity: .5;
+}
+
+.pp1 {
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    color: white;
+    text-shadow: 0 0 10px #000;
+}
+
+.gray {
+    width: 1000px;
+    height: 250px;
+    margin: 35px 0 0 0;
+    background: #d3d1d1;
+}
+
+.phone {
+    width: 200px;
+    margin: 0 0 -5px -100px;
+    left: 35%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.phone img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logos {
+    left: 50%;
+    top: 60%;
+}
+
+.hearstyle {
+    left: 55%;
+    top: 30%;
+    border-bottom: 4px solid #000;
+}
+
+.getin {
+    width: 300px;
+    left: 45%;
+    bottom: 5%;
+    color: var(--allcolor);
+    white-space: nowrap;
+}
+
+.num {
+    background: url(imgs/slide1.jpg);
+    background-size: cover;
+    width: 1000px;
+    height: 250px;
+}
+
+.bnum {
+    width: 1000px;
+    height: 250px;
+    background: rgb(0, 0, 0);
+    opacity: .5;
+}
+
+.col {
+    text-align: center;
+    width: 1000px;
+    height: 220px;
+    margin: 0 auto;
+    column-count: 2;
+    column-rule: 2px dashed #ccc;
+    top: 10%;
+    color: rgb(255, 255, 255);
+}
+
+.col h1 {
+    font-size: 60px;
+    margin: 10px 0 10px 0;
+}
+
+.about {
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    left: 15%;
+    align-items: center;
+}
+
+.about h3 {
+    font-size: 40px;
+    margin: 20px 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.about a {
+    color: rgb(0, 0, 0);
+    padding: 10px 30px 10px 30px;
+    margin: 0 10px 0 10px;
+    background: rgb(206, 205, 205);
+    border-radius: 4px;
+}
+
+.dcc {
+    width: 55%;
+}
+
+.map {
+    align-items: center;
+}
+
+.map p {
+    width: 50%;
+    color: rgb(180, 175, 175);
+    line-height: 30px;
+}
+
+.scut {
+    width: 60px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.coon ul li {
+    width: 100px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.coon a {
+    text-decoration: none;
+    color: rgb(158, 155, 155);
+    display: flex;
+    align-items: center;
+}
+
+.pinkbox {
+    width: 150px;
+    height: 65px;
+}
+
+.pink {
+    width: 150px;
+    top: 15%;
+}
+
+.pink img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.dis {
+    font-size: 16px;
+    color: var(--allcolor);
+    left: 50%;
+    margin-left: -21px;
+    top: 30%;
+}
+
+.ppppp {
+    width: 1000px;
+    text-align: center;
+    color: rgb(158, 155, 155);
+}

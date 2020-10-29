@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media screen and (){} */
+        /* screen 任何載具都可以用 */
+        /* print 給列表機 */
+        /* body {
+            background: pink;
+            transition: .5s;
+        }
+        @media screen and (max-width:768px) and (min-width:640px) {
+            body {
+                background: rebeccapurple;
+            }
+        }
+
+        @media screen and (max-width :640px) {
+            body {
+                background: #546454;
+            }
+        } */
+
+        body {
+            background: rgb(146, 169, 245);
+            transition: .5s;
+        }
+
+        @media screen and (min-width: 640px)
+
+        /* 判斷式  */
+            {
+            body {
+                background: rgb(219, 132, 132);
+
+            }
+
+            .box {
+                width: calc(33.3% - 20px);
+
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            body {
+                background: rgb(137, 228, 182);
+            }
+            .box{
+                width: calc(25% - 20px);
+            }
+
+        }
+
+        .wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .box {
+            width: calc(50% - 20px);
+            margin: 10px;
+            height: 100px;
+            background: saddlebrown;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+
+</html>

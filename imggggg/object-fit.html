@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 240px;
+            height: 240px;
+            border: 2px solid #ccc;
+            margin: 20px;
+        }
+        .box img{
+            width: 15%;
+            height: 100%;
+            
+        }
+        .fill{
+            object-fit:fill ;
+        }
+        .contain{
+            object-fit: contain;
+        }
+        .cover{
+            object-fit: cover;
+        }
+        .none{
+            object-fit: none;
+            object-position: center left;
+        }
+        /* object-position 設定裁切圖片的起始點 */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img class='fill' src="imgs/dr_strange.jpg" alt="">
+    </div>
+    <!-- 改變比例塞滿框裡 -->
+    <div class="box">
+        <img class='contain' src="imgs/dr_strange.jpg" alt="">
+    </div>
+    <!-- 合乎框架比例 -->
+    <div class="box">
+        <img class='cover' src="imgs/dr_strange.jpg" alt="">
+    </div>
+    <!-- 剛好填滿 -->
+    <div class="box">
+        <img class='none' src="imgs/dr_strange.jpg" alt="">
+    </div>
+    <!-- 原圖原大小塞進去 多的就切掉 -->
+</body>
+</html>

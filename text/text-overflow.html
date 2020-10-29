@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #ccc;
+        }
+
+        .card {
+            background: #fff;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 240px;
+            float: left;
+        }
+
+        .card h3 {
+            white-space: nowrap;
+            /* 不換行 */
+            text-overflow: ellipsis;
+            /* 就算多了也不會撐開文字空間 */
+            overflow: hidden;
+            /* 把多的變成... */
+        }
+        .card p{
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient:vertical
+        }
+        /* 四行都寫才有用 */
+        .card2{
+            float: left;
+            background: #fff;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 240px;
+            /* 英文比較受影響 */
+            /* word-break: break-all; */
+            /* 會直接切斷單字 */
+            word-wrap: break-word;
+            /* 確保單字不會過長超出格子範圍 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3 title='>獨家｜台中12名外籍大學生檢疫驚現武肺症狀　4生發燒！快篩結果出爐'>
+            獨家｜台中12名外籍大學生檢疫驚現武肺症狀　4生發燒！快篩結果出爐</h3>
+            <p>台中市一所大學的18名印尼籍新生和1名家長上周三（9月30日）入境台灣，在台中市一家防疫旅館檢疫，不料隔天開始有人出現腹瀉、發燒等武漢肺炎疑似症狀，到今天（5）下午5點為止，已有12人就醫，其中4人發燒。他們快篩後都呈現陰性，但仍未排除染疫的可能。住院的10人中，有8人已2採陰出院，另2人明天再2次採檢。</p>
+    </div>
+
+    <div class="card">
+        <h3>獨家｜起底白目騎士　國道蛇行竟不是第一次</h3>
+        <p>國道一號北上36公里處，今天（5日）上午一名趙姓男子騎機車上國道，還在車道上蛇行，釀成連環追撞事故，造成10車追撞5人受傷。有讀者伍先生向《蘋果新聞網》爆料表示，他上周五（2日）下午行駛於國道一號同路段時，也發現一部機車騎上國道，騎士還囂張在中、內側車道蛇行並起身站在機車上。經《蘋果》向國道警方查證，讀者拍下的機車車號與趙男今天肇事所騎的機車相同，懷疑趙男已經是累犯。國道警方表示，上周五當天並未接獲報案，呼籲民眾提供完整的畫面檢舉，警方將依法開罰。</p>
+    </div>
+    <div class="card2">
+        Pneumonoultramicroscopicsilicovolcanoconiosis
+        more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+    </div>
+</body>
+
+</html>

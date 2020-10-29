@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figure</title>
+    <style>
+        figure {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border-radius: 50%;
+            /* 50%就是圓形 超過也是 */
+            overflow: hidden;
+            /* 把超過區塊的部分隱藏 */
+        }
+       img{
+           width: 100%;
+           /* 要給範圍 不然圖片會亂跑 */
+       }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <div>
+            <img src="imgs/dr_strange.jpg" alt="">
+        </div>
+    </figure>
+
+</body>
+
+</html>

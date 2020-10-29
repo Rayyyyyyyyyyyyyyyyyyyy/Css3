@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            /* font-size: 2em; */
+            font-size: 2rem;
+        }
+
+        .full-page {
+            /* 1vh = 1/100 viewport height */
+            background: pink;
+            /* height: 100%; */
+            height: 100vh;
+            width: 50vw;
+        }
+
+        /* 100vh vw 就是滿版 */
+        .v-ex {
+            background: limegreen;
+            width: 30vmin;
+            height: 30vmin;
+            /* 應該很少見 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-page">
+        div content
+        <div>
+            div 1 content
+            <div>
+                div 2 content
+                <div>div 3 content</div>
+            </div>
+        </div>
+    </div>
+    <div class="v-ex"></div>
+</body>
+
+</html>

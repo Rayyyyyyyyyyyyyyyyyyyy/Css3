@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes change {
+            from {
+                background: rgb(223, 22, 223);
+
+            }
+
+            to {
+                background: purple;
+
+            }
+        }
+
+        @keyframes changeColor {
+            10% {
+                background: rgb(182, 0, 0);
+
+            }
+
+            50% {
+                background: rgb(247, 163, 247);
+
+            }
+
+            100% {
+                background: rgb(5, 68, 255);
+
+            }
+        }
+
+        @keyframes changeWidth {
+            0% {
+                width: 200px;
+            }
+
+            100% {
+                width: 300px;
+            }
+        }
+
+        .box {
+            margin: 5px 0;
+            width: 100px;
+            height: 50px;
+            background: pink;
+            /* animation-duration: 3s; */
+            /* animation-iteration-count:infinite; */
+            
+            /* animation-direction: alternate; */
+            /* 10%-50%-100%-50%-10% */
+
+            /* animation-fill-mode: both; */
+            /* animation-delay: 1s; */
+
+            animation: changeColor 2s infinite alternate both,changeWidth 1s infinite alternate;
+        }
+
+        /* .box:hover {
+            animation-play-state: paused;
+
+        } */
+
+        /* .linear{
+            animation-timing-function: linear;
+        }
+        .ease-in{
+            animation-timing-function:ease-in;
+        }
+        .cubic{
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .step-start{
+            animation-timing-function: steps(5,start);
+        }
+        .step-end{
+            animation-timing-function: steps(5,end);
+        } */
+
+        /* animation
+animation-delay: 動畫延遲
+animation-direction: 動畫播放方向
+animation-duration: 動畫持續時間
+animation-fill-mode: 動畫停止時顯示的畫面
+animation-iteration-count: 動畫播放次數
+animation-name: 選擇動畫
+animation-play-state: 動畫狀態
+animation-timing-function: 動畫播放 */
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- <div class="box linear"></div>
+    <div class="box ease-in"></div>
+    <div class="box cubic"></div>
+    <div class="box step-start"></div>
+    <div class="box step-end"></div> -->
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 160px;
+        }
+
+        .gra1 {
+            background: linear-gradient(yellow, rgb(155, 50, 50), rgb(211, 221, 211));
+        }
+
+        .gra2 {
+            background: linear-gradient(to left, rgb(230, 230, 218), red, rgb(3, 126, 3));
+        }
+
+        .gra3 {
+            background: linear-gradient(60deg, red, orange, yellow, blue);
+        }
+
+        .gra4 {
+            background: linear-gradient(45deg, orange, yellow, green, blue);
+        }
+
+        .gra5 {
+            background: linear-gradient(to right, pink 50%, green, blue 80%);
+        }
+
+        .gra6 {
+            background: linear-gradient(to right, red, yellow, green, blue);
+        }
+
+        .gra7 {
+            background: linear-gradient(to bottom, rgb(180, 94, 94) 50%, rgb(204, 126, 139) 50%);
+        }
+
+        .gra8 {
+            background:
+                linear-gradient(to bottom,
+                    rgba(76, 56, 167, 0) 50%,
+                    rgba(70, 21, 21, 0.9)),
+                url(imgs/map.png);
+        }
+
+        .gra9 {
+            background: repeating-linear-gradient(to bottom, rgb(167, 51, 51), rgb(110, 34, 172) 20%);
+        }
+
+        .gra10 {
+            background: linear-gradient(to bottom, rgb(138, 165, 196) 50%, rgb(204, 218, 19) 50%);
+            background-size: 100% 30px;
+            /* height: 400px; */
+        }
+
+        .gra11 {
+            background: radial-gradient(rgb(62, 190, 223), rgb(209, 47, 142));
+
+        }
+        .gra12 {
+            background: radial-gradient(circle, rgb(119, 173, 32),rgb(219, 219, 213));
+          
+        }
+        .gra13 {
+            background: radial-gradient(at 200px bottom,rgb(64, 27, 167),yellow);
+
+        }
+        .gra14 {
+            background: radial-gradient(circle at 200px bottom,rgb(64, 27, 167) 10%,yellow 20%, green );
+
+        }
+        .gra15 {
+            background: repeating-radial-gradient(circle at center bottom,rgb(33, 182, 41),rgb(77, 165, 103),rgb(131, 207, 182) 20%);
+        }
+        .metal-botn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(to bottom, #fff, #333 50%, #000 50%, #333);
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 6px #333, 0 0 8px rgb(231, 168, 168) inset;
+            border: 1px solid #ccc;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to bottom,rgb(153, 187, 120) 40%,rgb(36, 10, 107));
+            color: transparent;
+            -webkit-background-clip:text;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box gra1"></div>
+    <div class="box gra2"></div>
+    <div class="box gra3"></div>
+    <div class="box gra5"></div>
+    <div class="box gra4"></div>
+    <div class="box gra6"></div>
+    <div class="box gra7"></div>
+    <div class="box gra8"></div>
+    <div class="box gra9"></div>
+    <div class="box gra10"></div>
+    <div class="box gra11"></div>
+    <div class="box gra12"></div>
+    <div class="box gra13"></div>
+    <div class="box gra14"></div>
+    <div class="box gra15"></div>
+ 
+  <h1>Hello world!!</h1>
+ <a class='metal-botn' href="">off</a>
+
+</body>
+
+</html>

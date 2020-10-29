@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: rgb(102, 102, 177);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 20px;
+            /* 外邊界 */
+            transition: .5s;
+            /* 延遲的意思 */
+            float: left;
+        }
+
+        .shadow1 {
+            box-shadow: 2px 2px 5px #000;
+        }
+
+        .shadow2 {
+            box-shadow: 1px 2px 10px rgba(148, 141, 211, 0.8);
+
+        }
+
+        .shadow2:hover {
+            box-shadow: 1px 3px 10px #110707;
+        }
+
+        /* 等滑鼠移到上方才做動作的意思 */
+        .shadow3 {
+            box-shadow: 2px 2px 10px 5px rgb(37, 17, 17);
+        }
+
+        .shadow4 {
+            box-shadow: 2px 2px 100px 5px inset rgb(37, 17, 17);
+        }
+
+        /* 陰影往右 陰影往下 陰影範圍 陰影濃度 內陰影 陰影顏色 */
+        .shadow5 {
+            box-shadow: 2px 2px 30px 5px inset rgb(37, 17, 17),
+                2px 2px 30px 5px rgb(167, 33, 33);
+        }
+
+        /* inset是內陰影 加 , 可以再多寫指令碼把外陰影加上 */
+        .shadow6:hover {
+            box-shadow: 200px 0px 0 red, 0 200px 0 orange,
+                200px 200px 0 green;
+        }
+
+        .shadow7 {
+            box-shadow:0 5px red,
+            0 10px orange,
+            0 15px yellow,
+            0 20px green,
+            0 25px blue,
+            0 30px blueviolet,
+            0 35px purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='box shadow1'></div>
+    <div class="box shadow2"></div>
+    <div class="box shadow3"></div>
+    <div class="box shadow4"></div>
+    <div class="box shadow5"></div>
+    <div class="box shadow6"></div>
+    <div class="box shadow7"></div>
+
+</body>
+
+</html>
